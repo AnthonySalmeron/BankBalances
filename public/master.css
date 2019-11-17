@@ -1,0 +1,63 @@
+body{
+  text-align: center;
+  font-family: sans-serif;
+}
+ul {
+  background:darkseagreen;
+color:darkblue;
+  margin-top: 0;
+  padding-top: 2%;
+  text-align: left;
+  float:left;
+  border: 5px solid black;
+  width:37%;
+  height: 100vh;
+}
+h1 {
+  background:darkgreen;
+margin-top: 0;
+line-height: 1.5;
+color:beige;
+}
+li {
+  list-style-type: disclosure-closed;
+  border-bottom: 1px solid gray;
+  margin-bottom: 4%;
+}
+li:last-of-type {
+  border: none;
+}
+p {
+  text-indent: 5%;
+  font-size: 20px;
+  line-height: 0.5;
+}
+.name, .current {
+  font-size: 30px;
+  border-bottom: 1px solid lightgray;
+}
+main {
+  width: 50%;
+  float:left;
+  background: gray;
+  height: 100vh;
+}
+input {
+  font-size: 18px;
+}
+button { /*https://www.formstack.com/blog/2010/customize-form-buttons-with-css/ */
+  padding: 5px 8px 6px ;
+  font-size: 18px ;
+  background-color: #57d6c7;
+  font-weight: bold;
+  text-shadow: 1px 1px #57D6C7;
+  color: #ffffff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #57D6C7;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}

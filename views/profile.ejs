@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <ul class="remaining">
+    <% for(var i=0; i<remaining.length; i++) {%>
+      <li class="message">
+        <span class="name"><%= remaining[i].name %></span>
+        <span class="current">$<%= remaining[i].current %></span>
+        <% for(var j=0;j<remaining[i].transactions.length;j++){ %>
+          <p>
+            <span><%= remaining[i].transactions[j][0] %></span>
+            <span>$<%= remaining[i].transactions[j][1] %></span>
+          </p>
+        <% } %>
+      </li>
+    <% } %>
+    </ul>
+    <main><h1>Money Tracker</h1>
+    <h3>Add Account</h3>
+    <form action="/account" method="post">
+      <input type="text" name="name" placeholder="Name of Account">
+      <input type="number" name="current" placeholder="Starting Deposit">
+      <button type="submit" name="button">Submit</button>
+    </form>
+    <h3>Deposit Money</h3>
+      <section>
+        <input type="text" name="name" placeholder="Name of Account">
+        <input type="number" name="deposit" placeholder="Deposit Amount">
+        <input type="text" name="reason" placeholder="Deposit Statement">
+        <button id="deposit" type="submit" name="button">Submit</button>
+      </section>
+    <h3>Withdraw Money</h3>
+    <section>
+      <input type="text" name="name" placeholder="Name of Account">
+      <input type="number" name="withdrawal" placeholder="Withdrawal Amount">
+      <input type="text" name="reason" placeholder="Reason For Withdrawl">
+      <button id="withdraw" type="submit" name="button">Submit</button>
+    </section>
+    <h3>Cancel Accoount</h3>
+    <section>
+      <input type="text" name="name" placeholder="Account to Delete">
+      <input type="text" name="transfer" placeholder="Account to Transfer To">
+      <button class="delete" type="submit" name="button">Submit</button>
+    </section></main>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

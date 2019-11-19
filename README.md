@@ -17,7 +17,7 @@
   - First a get request is made using the name of the one that you want to delete as search parameters
   - Then an array is returned holding the current value of the bank account you want to delete
   - This value is used to make a put request that will increment the value of the account you want to transfer money to
-  - When this operation is complete a final delete request is made, when the browser recieves a positive response, the page is reloaded
+  - When this operation is complete a final delete request is made, when the browser receives a positive response, the page is reloaded
 # Installation
 
 1. Clone repo

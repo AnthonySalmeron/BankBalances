@@ -12,7 +12,7 @@
 - Form makes post request to server, server creates a document in collection that will hold the name of the account, the current balance, and an array that contains the transaction history (an array of name/reason for transaction and value of transaction)
 - Both put request types (withdrawal and deposit) are handled through the same handler in the server, it will determine which type of request is coming in by searching for either a "deposit" or "withdrawal" property in the body of the request
 - Depending on which it receives, it will increment the current value of the given account by the deposit or by the withdrawal(which is a negative number)
--Finally it will push another array into the transaction history array to keep track of what occured and send back a result to the browser js which will reload the page
+- Lastly it will push another array into the transaction history array to keep track of what occured and send back a result to the browser js which will reload the page
 - Delete requests happen in 3 steps
   - First a get request is made using the name of the one that you want to delete as search parameters
   - Then an array is returned holding the current value of the bank account you want to delete

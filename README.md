@@ -1,7 +1,7 @@
 ### BankBalances
 ## Goal: keep track of multiple bank accounts and update, add, or delete them
 ![home page](public/Capture.PNG)
-## How it's made: h
+## How it's made: 
 - Server is set up to be able to handle requests that come from browser side JS and forms
 - Index.ejs page is made that links to login and sign up pages
 - Log in page has fields for email and password, once entered, a password check is made against the database using a passport module
